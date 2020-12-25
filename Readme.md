@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Бачева](https://up.htmlacademy.ru/adaptive/21/user/1528269).
-* Наставник: `Неизвестно`.
+* Наставник: [Мария Коршунова](https://htmlacademy.ru/profile/masha_mk).
 
 ---
 
