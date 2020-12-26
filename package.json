@@ -1,7 +1,7 @@
 {
-  "name": "pink-21",
+  "name": "barbershop-21",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "Barbershop from HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.0.2",
@@ -9,8 +9,9 @@
     "gulp": "4.0.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.0",
-    "gulp-sass": "4.1.0",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "3.0.0",
+    "node-sass": "^4.14.1",
     "postcss": "8.1.7",
     "stylelint": "13.7.2",
     "stylelint-config-htmlacademy": "0.1.4"
