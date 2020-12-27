@@ -1,0 +1,58 @@
+.main-nav {
+  position: relative;
+  align-self: stretch;
+  height: 50px;
+
+  background-color: #826550;
+}
+
+.main-nav__title {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70px;
+  height: 50px;
+  padding: 15px;
+
+  font-size: 0;
+
+  border: none;
+  background: #6a4d38 url(../../../img/menu-icon-svg.png) no-repeat center;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.main-nav--opened {
+  display: flex;
+}
+
+.main-nav--opened .main-nav__title {
+  display: none;
+}
+
+.main-nav--opened .main-nav__toggle {
+  position: relative;
+
+  background-image: url(../../../img/cross-icon.svg.png);
+}
+
+.main-nav__wrapper {
+  flex-grow: 1;
+  min-height: 70vh;
+
+  background-color: #6a4d38;
+  box-shadow: inset 5px 0 5px rgba(0, 0, 0, 0.1);
+}

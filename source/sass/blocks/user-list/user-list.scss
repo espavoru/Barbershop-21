@@ -1,0 +1,35 @@
+.user-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-list__login {
+  display: block;
+  height: 50px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  padding-right: 10px;
+
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+
+    background-image: url("../../../img/login.svg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transform: translateY(2px);
+  }
+}

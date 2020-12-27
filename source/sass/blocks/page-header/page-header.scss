@@ -1,0 +1,14 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header__logo-link {
+  margin-top: 30px;
+  margin-bottom: 25px;
+
+  &:focus {
+    outline: none;
+  }
+}

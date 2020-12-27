@@ -1,0 +1,26 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__link {
+  display: block;
+  height: 50px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-bottom: 1px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  box-shadow: 0px 1px 0 0 #71543f, inset 0px 1px 0 0 #886e5b;
+  background-color: #826550;
+}
