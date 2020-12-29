@@ -7,7 +7,7 @@
 
 .stats__slogan {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   font-size: 30px;
   font-weight: bold;
@@ -51,7 +51,7 @@
 
 .stats__value {
   position: relative;
-  padding: 25px 20px;
+  padding: 22px 20px;
 
   font-size: 40px;
   line-height: 18px;
@@ -65,7 +65,7 @@
 }
 
 .stats__field {
-  padding: 25px 20px;
+  padding: 22px 20px;
 
   font-size: 18px;
   line-height: 1;
@@ -81,4 +81,8 @@
   text-align: center;
   color: #ffffff;
   opacity: 30%;
+}
+
+.stats__legend--top {
+  display: none;
 }
