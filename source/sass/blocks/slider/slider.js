@@ -1,10 +1,23 @@
 const slider = (selector) => {
   const slider = document.querySelector(`${selector}`);
   const slides = slider.querySelectorAll(".slider__item");
-  const toggles = slider.querySelectorAll(".slider__toggle");
+  const togglesList = slider.querySelector(".slider__toggles");
+
+  slides.forEach((slide, i) => {
+    const toggle = document.createElement("button");
+    toggle.classList.add("slider__toggle");
+    toggle.textContent = i + 1;
+    togglesList.append(toggle);
+  });
+
+  slider
+    .querySelector(".slider__toggle")
+    .classList.add("slider__toggle--active");
 
   const clickHandler = (e) => {
     if (e.target.closest(".slider__toggle")) {
+      const toggles = slider.querySelectorAll(".slider__toggle");
+
       toggles.forEach((toggle) => {
         toggle.classList.remove("slider__toggle--active");
       });
