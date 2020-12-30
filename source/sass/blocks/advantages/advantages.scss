@@ -1,3 +1,11 @@
+.advantages::after {
+  content: "";
+  display: block;
+  border: 165px solid #f7f4f1;
+  border-top: 35px solid #242424;
+  border-bottom: none;
+}
+
 .advantages__item {
   height: 340px;
 
