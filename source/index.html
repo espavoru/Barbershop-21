@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Barbershop</title>
   <script src="js/app.js"></script>
@@ -136,8 +137,9 @@
         <a href="#" class="reviews__write button">Написать свой</a>
 
         <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
-            <p class="reviews__author-picture"><img src="img/picture-travis.jpg" alt="Фото Тревиса"
+
+          <blockquote class="reviews__item slider__item  slider__item--active">
+            <p class="reviews__author-picture"><img src="img/picture-travis.png" width="51" alt="Фото Тревиса"
                 class="reviews__author-image"></p>
             <cite class="reviews__author-name">Тревис Баркер</cite>
             <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно
@@ -145,14 +147,14 @@
           </blockquote>
           <!-- /.reviews__item -->
           <blockquote class="reviews__item slider__item">
-            <p class="reviews__author-picture"><img src="img/picture-john.jpg" alt="Фото Джона"
+            <p class="reviews__author-picture"><img src="img/picture-john.jpg" width="51" alt="Фото Джона"
                 class="reviews__author-image"></p>
             <cite class="reviews__author-name">Джон Смит</cite>
             <p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat.</p>
           </blockquote>
           <!-- /.reviews__item -->
           <blockquote class="reviews__item slider__item">
-            <p class="reviews__author-picture"><img src="img/picture-joe.jpg" alt="Фото Джо"
+            <p class="reviews__author-picture"><img src="img/picture-joe.jpg" width="51" alt="Фото Джо"
                 class="reviews__author-image"></p>
             <cite class="reviews__author-name">Джо Смит</cite>
             <p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat.</p>
@@ -164,11 +166,7 @@
 
         </div>
         <!-- /.reviews__list slider__list -->
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle">1</button>
-          <button class="slider__toggle">2</button>
-          <button class="slider__toggle">3</button>
-        </p>
+        <p class="reviews__toggles slider__toggles"></p>
         <!-- /.reviews__toggles -->
       </div>
       <!-- /.reviews__wrapper slider -->

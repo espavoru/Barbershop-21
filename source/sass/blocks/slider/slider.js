@@ -40,3 +40,4 @@ const slider = (selector) => {
 };
 
 slider(".advantages");
+slider(".reviews");

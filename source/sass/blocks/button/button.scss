@@ -12,8 +12,8 @@
   text-decoration: none;
   color: #000000;
 
-  border: 1px solid #e5ddd5;
-  background-color: #f8f5f2;
+  border: 1px solid $border-color;
+  background-color: $bg-color-light;
 
   transition: all 100ms ease-in;
 
