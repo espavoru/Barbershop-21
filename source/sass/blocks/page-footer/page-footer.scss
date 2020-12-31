@@ -1,2 +1,37 @@
 .page-footer {
+  padding-top: 25px;
+
+  text-align: center;
+  border-top: 1px solid $border-color-dark;
+}
+
+.page-footer__contacts {
+  padding-top: 8px;
+  padding-bottom: 28px;
+}
+
+.page-footer .contacts__phone {
+  width: 280px;
+  margin-top: auto;
+
+  color: #ffffff;
+  border-color: $border-color-dark;
+
+  background-color: $bg-color-dark;
+}
+
+.page-footer .contacts__text {
+  min-height: 121px;
+}
+
+.page-footer .social__title {
+  display: none;
+}
+
+.page-footer__copyright {
+  padding-top: 28px;
+  padding-bottom: 25px;
+
+  color: #ffffff;
+  border-bottom: 1px solid $border-color-dark;
 }

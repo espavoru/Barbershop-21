@@ -1,0 +1,23 @@
+.contacts {
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.contacts__title {
+  display: block;
+  margin-bottom: 10px;
+
+  font-weight: bold;
+}
+
+.contacts__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.contacts__phone-mobile {
+  display: none;
+}

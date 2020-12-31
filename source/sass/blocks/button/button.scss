@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 300px;
   height: 50px;
 
   font-size: 18px;
@@ -12,7 +11,7 @@
   text-decoration: none;
   color: #000000;
 
-  border: 1px solid $border-color;
+  border: 1px solid $border-color-light;
   background-color: $bg-color-light;
 
   transition: all 100ms ease-in;
