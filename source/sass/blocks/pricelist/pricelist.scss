@@ -1,0 +1,45 @@
+.pricelist {
+  padding-top: 36px;
+  padding-bottom: 52px;
+
+  background-color: #353535;
+}
+
+.pricelist__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pricelist__title {
+  margin: 0;
+  margin-bottom: 21px;
+
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+
+.pricelist__table {
+  width: 100%;
+  margin-bottom: 14px;
+  border-collapse: collapse;
+
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.pricelist__service {
+  width: 73%;
+  padding-bottom: 14px;
+}
+
+.pricelist__price {
+  text-align: right;
+  vertical-align: top;
+}
