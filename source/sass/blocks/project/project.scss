@@ -1,0 +1,125 @@
+.project {
+  margin-bottom: 20px;
+}
+
+.project__picture {
+  position: relative;
+  margin: 0;
+}
+
+.project__image {
+  display: block;
+}
+
+.project__image-tag {
+  position: absolute;
+  bottom: 32px;
+  height: 50px;
+  padding-left: 25px;
+  padding-right: 17px;
+
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+
+  background-color: $bg-color-accent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -9px;
+    top: 0;
+
+    border-top: 25px solid $bg-color-accent;
+    border-bottom: 25px solid $bg-color-accent;
+    border-right: 10px solid transparent;
+  }
+}
+
+.project__info {
+  margin: 0;
+  padding: 20px;
+  padding-top: 19px;
+  padding-left: 22px;
+  padding-bottom: 0;
+
+  border: 1px solid $border-color-light;
+  border-top: none;
+}
+
+.project__title {
+  display: block;
+  margin-bottom: 13px;
+
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-style: normal;
+}
+
+.project__description {
+  margin: 0;
+  margin-bottom: 17px;
+
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.1px;
+}
+
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project__list-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 36px;
+  margin-bottom: 19px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 23px;
+    height: 20px;
+    margin-right: 17px;
+    margin-top: 3px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.project__list-item--cut::before {
+  background-image: url("../../../img/scissors-icon.svg.png");
+}
+
+.project__list-item--shave::before {
+  background-image: url("../../../img/beard-icon.svg.png");
+}
+
+.project__list-item--stash::before {
+  width: 45px;
+  margin-left: -10px;
+
+  background-image: url("../../../img/mustache-icon.svg.png");
+}
