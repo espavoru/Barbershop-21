@@ -61,3 +61,67 @@
   display: block;
   text-align: left;
 }
+
+@media (min-width: 768px) {
+  .main-nav {
+    min-height: 70px;
+    overflow: visible;
+
+    background-color: #000000;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 64px;
+    min-height: unset;
+
+    background-color: transparent;
+  }
+
+  .main-nav__list.site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 560px;
+    flex-shrink: 0;
+  }
+
+  .main-nav__list .user-list__login {
+    height: auto;
+    padding: 17px 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+
+    font-size: 0;
+  }
+
+  .main-nav__list .site-list__item {
+    position: relative;
+    display: block;
+  }
+
+  .main-nav .site-list__link {
+    height: auto;
+    padding: 25px 0;
+    margin: 0;
+
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .main-nav .site-list__item--active::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $bg-color-accent;
+  }
+}

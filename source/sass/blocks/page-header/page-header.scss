@@ -5,10 +5,32 @@
 }
 
 .page-header__logo-link {
-  margin-top: 38px;
+  margin-top: 41px;
   margin-bottom: 22px;
 
   &:focus {
     outline: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    min-height: 470px;
+
+    background-image: url("../../../img/back-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .page-header__logo-link {
+    order: 1;
+    width: 370px;
+    height: 101px;
+
+    background-image: url("../../../img/logotype-tablet.svg.png");
+    background-repeat: no-repeat;
+  }
+
+  .page-header__logo-image {
+    display: none;
   }
 }
