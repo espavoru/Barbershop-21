@@ -72,6 +72,21 @@
   line-height: 1;
   text-align: right;
   color: #f7f4f1;
+  white-space: pre-line;
+}
+
+.stats__item {
+  display: flex;
+}
+
+.stats__value,
+.stats__field {
+  flex-basis: 48%;
+  flex-shrink: 0;
+}
+
+.stats__value {
+  flex-basis: 52%;
 }
 
 .stats__legend {
@@ -150,5 +165,51 @@
     padding-left: 10px;
 
     color: rgba(0, 0, 0, 0.99);
+  }
+
+  .stats__list > * {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .stats__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    padding-bottom: 5px;
+  }
+
+  .stats__value,
+  .stats__field {
+    flex-basis: 100%;
+    padding-left: 32px;
+  }
+
+  .stats__value {
+    padding-top: 51px;
+
+    font-size: 72px;
+    line-height: 18px;
+  }
+
+  .stats__field {
+    padding-top: 14px;
+    padding-left: 35px;
+
+    font-size: 20px;
+    line-height: 27px;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .stats__value sup {
+    top: 46px;
+    transform: translateX(15px);
+
+    font-size: 40px;
+  }
+
+  .stats__legend--bottom {
+    display: none;
   }
 }
