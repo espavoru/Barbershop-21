@@ -87,3 +87,68 @@
 .stats__legend--top {
   display: none;
 }
+
+@media (min-width: 768px) {
+  .stats__wrapper {
+    width: 768px;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin: 0 auto;
+    margin-top: -185px;
+  }
+
+  .stats__header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 185px;
+    padding-top: 30px;
+
+    text-align: left;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -22px;
+      top: 43px;
+
+      border: 11px solid #ffffff;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+    }
+  }
+
+  .stats__slogan,
+  .stats__intro {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .stats__slogan {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: none;
+    letter-spacing: 0.2px;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  .stats__intro {
+    padding-top: 5px;
+    padding-left: 32px;
+    padding-right: 30px;
+
+    letter-spacing: 0.2px;
+  }
+
+  .stats__legend--top {
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+
+    color: rgba(0, 0, 0, 0.99);
+  }
+}

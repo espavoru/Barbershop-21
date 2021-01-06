@@ -87,9 +87,9 @@
   .main-nav__list.site-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     flex-basis: 560px;
     flex-shrink: 0;
+    margin-left: -16px;
   }
 
   .main-nav__list .user-list__login {
@@ -108,8 +108,10 @@
 
   .main-nav .site-list__link {
     height: auto;
-    padding: 25px 0;
+    padding: 25px 16px;
     margin: 0;
+
+    letter-spacing: 0.1px;
 
     box-shadow: none;
     background-color: transparent;
@@ -118,10 +120,12 @@
   .main-nav .site-list__item--active::after {
     content: "";
     position: absolute;
+    left: 50%;
     bottom: -2px;
-    left: 0;
     height: 2px;
-    width: 100%;
+    width: calc(100% - 32px);
+
+    transform: translateX(-50%);
     background-color: $bg-color-accent;
   }
 }
