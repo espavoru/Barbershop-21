@@ -48,7 +48,7 @@
 }
 
 .reviews__author-image {
-  outline: 1px solid $border-color-light;
+  border: 1px solid $border-color-light;
 }
 
 .reviews__author-name {
@@ -75,4 +75,109 @@
 
 .reviews__toggles .slider__toggle {
   border-color: #000000;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    padding-top: 35px;
+    padding-bottom: 51px;
+  }
+
+  .reviews__wrapper.slider {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 768px;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin: 0 auto;
+  }
+
+  .reviews__title {
+    padding-top: 10px;
+    font-size: 40px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .reviews__write {
+    display: flex;
+    width: 160px;
+    margin-bottom: 39px;
+  }
+
+  .reviews__list {
+    min-height: 160px;
+    border: 1px solid $border-color-light;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    position: relative;
+    display: block;
+    flex-shrink: 0;
+    width: 50px;
+
+    font-size: 0;
+    border: none;
+    border-left: 1px solid $border-color-light;
+
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      border: 12px solid transparent;
+      border-left-color: #000000;
+      border-top-width: 6px;
+      border-bottom-width: 6px;
+      border-right: 0;
+    }
+  }
+
+  .reviews__prev {
+    order: -1;
+
+    transform: rotate(180deg);
+  }
+
+  .reviews__next {
+    order: 1;
+  }
+
+  .reviews__author-image {
+    width: 80px;
+    margin-left: 30px;
+
+    border-radius: 50%;
+  }
+
+  .reviews__text,
+  .reviews__author-name {
+    margin-left: 138px;
+  }
+
+  .reviews__author-name {
+    margin-bottom: 12px;
+  }
+
+  .reviews__toggles {
+    width: 135px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+
+    background-color: $bg-color-light;
+  }
 }
