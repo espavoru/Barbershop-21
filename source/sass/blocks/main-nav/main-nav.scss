@@ -18,7 +18,7 @@
   font-size: 0;
 
   border: none;
-  background: #6a4d38 url(../../../img/menu-icon-svg.png) no-repeat center;
+  background: #6a4d38 url("../../../img/menu-icon-svg.png") no-repeat center;
 
   &:focus {
     outline: none;
@@ -33,7 +33,7 @@
 .main-nav--opened .main-nav__toggle {
   position: relative;
 
-  background-image: url(../../../img/cross-icon.svg.png);
+  background-image: url("../../../img/cross-icon.svg.png");
 }
 
 .main-nav__wrapper {

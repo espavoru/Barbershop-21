@@ -5,6 +5,7 @@
 .project__picture {
   position: relative;
   margin: 0;
+  overflow: hidden;
 }
 
 .project__image {
@@ -122,4 +123,89 @@
   margin-left: -10px;
 
   background-image: url("../../../img/mustache-icon.svg.png");
+}
+
+@media (min-width: 768px) {
+  .project {
+    display: flex;
+    flex-basis: 100%;
+    margin-bottom: 41px;
+    outline: 1px solid $border-color-light;
+
+    & > * {
+      flex-basis: 50%;
+      flex-shrink: 0;
+    }
+  }
+
+  .project__image {
+    display: none;
+    transform: scale(1.005);
+  }
+
+  .project__picture::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 293px;
+
+    transform: scale(1.005);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project:first-of-type .project__image {
+    display: block;
+    margin-left: -10px;
+  }
+
+  .project:nth-of-type(1) .project__picture::before {
+    content: none;
+  }
+
+  .project:nth-of-type(2) .project__picture::before {
+    background-image: url("../../../img/photo-2-tablet.jpg");
+  }
+
+  .project:nth-of-type(3) .project__picture::before {
+    background-image: url("../../../img/photo-3-tablet.jpg");
+  }
+
+  .project:nth-of-type(4) .project__picture::before {
+    background-image: url("../../../img/photo-4-tablet.jpg");
+  }
+
+  .project .project__image-tag {
+    bottom: auto;
+    top: 33px;
+    left: -2px;
+    padding-left: 20px;
+    padding-right: 24px;
+    z-index: 1;
+
+    letter-spacing: 0.1px;
+  }
+
+  .project__info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 42px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 0;
+
+    border: none;
+  }
+
+  .project__title {
+    margin-bottom: 26px;
+  }
+
+  .project__description {
+    letter-spacing: 0.2px;
+  }
+
+  .project__list {
+    margin-top: auto;
+  }
 }

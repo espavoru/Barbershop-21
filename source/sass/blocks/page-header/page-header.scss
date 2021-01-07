@@ -17,8 +17,10 @@
   .page-header {
     min-height: 470px;
 
-    background-image: url("../../../img/back-tablet.jpg");
+    background-image: url("../../../img/back-desktop.jpg");
+    background-position: center bottom;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .page-header__logo-link {

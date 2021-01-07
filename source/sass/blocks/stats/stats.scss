@@ -51,6 +51,7 @@
 }
 
 .stats__value {
+  flex-basis: 52%;
   position: relative;
   padding: 22px 20px;
 
@@ -85,10 +86,6 @@
   flex-shrink: 0;
 }
 
-.stats__value {
-  flex-basis: 52%;
-}
-
 .stats__legend {
   display: block;
 
@@ -97,10 +94,6 @@
   text-align: center;
   color: #ffffff;
   opacity: 30%;
-}
-
-.stats__legend--top {
-  display: none;
 }
 
 @media (min-width: 768px) {
