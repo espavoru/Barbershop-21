@@ -39,7 +39,90 @@
   padding-bottom: 14px;
 }
 
+.pricelist__add-services {
+  display: none;
+}
+
 .pricelist__price {
   text-align: right;
   vertical-align: top;
+}
+
+@media (min-width: 768px) {
+  .pricelist {
+    padding-top: 49px;
+    padding-bottom: 59px;
+  }
+
+  .pricelist__wrapper {
+    width: 768px;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin: 0 auto;
+  }
+
+  .pricelist__title {
+    margin-bottom: 52px;
+
+    font-size: 40px;
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: 0.1px;
+  }
+
+  .pricelist__table {
+    margin-bottom: 11px;
+  }
+
+  .pricelist__table td {
+    border: 1px solid #4a4a4a;
+    padding-left: 20px;
+    padding-right: 18px;
+  }
+
+  td.pricelist__num {
+    width: 11%;
+    padding: 0;
+
+    text-align: center;
+  }
+
+  .pricelist__service {
+    width: 39%;
+    padding-top: 13px;
+  }
+
+  .pricelist__add-services-sm {
+    display: none;
+  }
+
+  .pricelist__add-services {
+    display: table-cell;
+    width: 25%;
+  }
+
+  .pricelist__price {
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .pricelist__promo.promo {
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    background-image: url("../../../img/clock-illustration-md.png");
+  }
+
+  .pricelist__promo .promo__text {
+    width: 75%;
+    margin-left: auto;
+    padding-left: 20px;
+
+    font-size: 30px;
+    line-height: 37px;
+    text-align: left;
+    white-space: nowrap;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
