@@ -206,3 +206,35 @@
     display: none;
   }
 }
+
+@media (min-width: 1080px) {
+  .stats__wrapper {
+    display: flex;
+    width: 960px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: -160px;
+  }
+
+  .stats__header {
+    flex-basis: calc(100%/6*2);
+    height: auto;
+  }
+
+  .stats__list {
+    flex-basis: calc(100%/6*4);
+    width: auto;
+    margin: 0;
+  }
+
+  .stats__intro,
+  .stats__slogan {
+    flex-basis: 100%;
+  }
+
+  .stats__intro {
+    padding: 0;
+    padding-top: 29px;
+  }
+
+}
