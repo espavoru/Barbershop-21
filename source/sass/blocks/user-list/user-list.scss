@@ -33,3 +33,9 @@
     transform: translateY(2px);
   }
 }
+
+@media (min-width: 1080px) {
+  .user-list__login::before {
+    margin-right: 19px;
+  }
+}
