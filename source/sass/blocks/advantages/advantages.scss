@@ -97,3 +97,39 @@
     display: none;
   }
 }
+
+@media (min-width: 1080px) {
+  .advantages {
+    padding-bottom: 105px;
+  }
+
+  .advantages__wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .advantages__list.slider__list {
+    flex-direction: row;
+    padding: 0;
+    padding-top: 80px;
+  }
+
+  .advantages__item.slider__item {
+    flex-basis: calc(100%/6*2);
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 125px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    text-align: center;
+    border-bottom: none;
+    border-right: 1px solid $border-color-dark;
+
+
+    background-position: center top;
+  }
+}
