@@ -9,3 +9,4 @@ const loadScript = (url) => {
 
 loadScript("sass/blocks/main-nav/main-nav.js");
 loadScript("sass/blocks/slider/slider.js");
+loadScript("sass/blocks/news/news.js");

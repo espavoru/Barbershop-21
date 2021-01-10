@@ -217,12 +217,12 @@
   }
 
   .stats__header {
-    flex-basis: calc(100%/6*2);
+    flex-basis: calc(100% / 6 * 2);
     height: auto;
   }
 
   .stats__list {
-    flex-basis: calc(100%/6*4);
+    flex-basis: calc(100% / 6 * 4);
     width: auto;
     margin: 0;
   }
@@ -236,5 +236,4 @@
     padding: 0;
     padding-top: 29px;
   }
-
 }
