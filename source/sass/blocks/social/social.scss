@@ -41,3 +41,17 @@
 .social__link--instagram {
   background-image: url("../../../img/insta-icon-big.png");
 }
+
+@media (min-width: 1080px) {
+  .social__link--vkudahte {
+    background-size: 30%;
+  }
+
+  .social__link--facebook {
+    background-size: 20%;
+  }
+
+  .social__link--instagram {
+    background-size: 40%;
+  }
+}
