@@ -31,6 +31,8 @@
 }
 
 .reviews__item {
+  flex-grow: 1;
+  flex-shrink: 1;
   margin: 0;
   padding-top: 29px;
   padding-bottom: 10px;
@@ -179,5 +181,77 @@
     margin-top: -5px;
 
     background-color: $bg-color-light;
+  }
+}
+
+@media (min-width: 1080px) {
+  .reviews {
+    padding-top: 40px;
+    padding-bottom: 31px;
+  }
+
+  .reviews__wrapper.slider {
+    width: 960px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reviews__title {
+    padding-left: 70px;
+  }
+
+  .reviews__write {
+    margin-bottom: 35px;
+  }
+
+  .reviews__item {
+    padding: 0;
+  }
+
+  .reviews__author-picture {
+    margin-top: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 249px;
+      height: 160px;
+      margin-left: 20px;
+
+      border-radius: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: scale(1.01);
+    }
+  }
+
+  .reviews__item:nth-of-type(1) .reviews__author-picture::before {
+    background-image: url("../../../img/picture-travis-lg.jpg");
+  }
+
+  .reviews__item:nth-of-type(2) .reviews__author-picture::before {
+    background-image: url("../../../img/picture-john-lg.jpg");
+  }
+
+  .reviews__item:nth-of-type(3) .reviews__author-picture::before {
+    background-image: url("../../../img/picture-joe-lg.jpg");
+  }
+
+  .reviews__author-image {
+    display: none;
+  }
+
+  .reviews__text, .reviews__author-name {
+    margin-left: 338px;
+    padding-right: 30px;
+  }
+
+  .reviews__author-name {
+    padding-top: 30px;
+  }
+
+  .reviews__toggles {
+    margin-top: 41px;
   }
 }
