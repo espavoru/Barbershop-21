@@ -126,3 +126,58 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: 1080px) {
+  .pricelist {
+    padding-top: 83px;
+    padding-bottom: 83px;
+  }
+
+  .pricelist__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 960px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pricelist__title {
+    flex-basis: 100%;
+  }
+
+  .pricelist__table {
+    flex-basis: calc(100% / 6 * 4 - 10px);
+    margin: 0;
+  }
+
+  td.pricelist__add-services {
+    padding-left: 18px;
+  }
+
+  .pricelist__promo.promo {
+    flex-basis: calc(100% / 6 * 2 - 50px);
+    overflow: hidden;
+    padding-top: 201px;
+    padding-bottom: 10px;
+
+    background-image: url("../../../img/clock-illustration-lg.png");
+    background-position: center 36px;
+  }
+
+  .pricelist__promo .promo__text {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: normal;
+    text-transform: none;
+    text-align: center;
+    white-space: normal;
+  }
+
+}
