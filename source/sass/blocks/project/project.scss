@@ -209,3 +209,88 @@
     margin-top: auto;
   }
 }
+
+@media (min-width: 1080px) {
+  .project {
+    position: relative;
+    flex-direction: column;
+    flex-basis: calc(100% / 6 * 2 - 27px);
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .project--featured {
+    flex-direction: row;
+    flex-basis: 100%;
+  }
+
+  .project__picture {
+    position: static;
+    overflow: visible;
+  }
+
+  .project:first-of-type .project__image {
+    display: none;
+  }
+
+  .project:first-of-type .project__image--lg {
+    display: block;
+    margin-left: 0;
+  }
+
+  .project .project__image-tag {
+    top: 25px;
+    right: -3px;
+    left: unset;
+
+    &::after {
+      right: auto;
+      left: -9px;
+
+      border-right: none;
+      border-left: 10px solid transparent;
+    }
+  }
+
+  .project__info {
+    max-height: 250px;
+    padding-top: 30px;
+    padding-bottom: 42px;
+    padding-left: 35px;
+  }
+
+  .project--featured .project__info {
+    max-height: unset;
+    padding-top: 127px;
+    padding-left: 40px;
+    padding-bottom: 33px;
+  }
+
+  .project__list-item {
+    margin-bottom: 0;
+  }
+
+  .project__list-item:nth-child(2n) {
+    margin-right: 36px;
+  }
+
+  .project__list-item:last-of-type {
+    margin-right: 0;
+  }
+
+  .project__picture::before {
+    width: 100%;
+  }
+
+  .project:nth-of-type(2) .project__picture::before {
+    background-image: url("../../../img/photo-2-desktop.jpg");
+  }
+
+  .project:nth-of-type(3) .project__picture::before {
+    background-image: url("../../../img/photo-3-desktop.jpg");
+  }
+
+  .project:nth-of-type(4) .project__picture::before {
+    background-image: url("../../../img/photo-4-desktop.jpg");
+  }
+}

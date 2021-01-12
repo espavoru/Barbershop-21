@@ -49,4 +49,5 @@ const news01 = new createNews({
   text: "Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь.",
 });
 
-document.querySelector(".news__list").append(news01.getElem());
+if (document.querySelector(".news__list"))
+  document.querySelector(".news__list").append(news01.getElem());

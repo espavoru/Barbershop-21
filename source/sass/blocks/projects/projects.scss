@@ -52,3 +52,18 @@
     margin-bottom: 39px;
   }
 }
+
+@media (min-width: 1080px) {
+  .projects__wrapper {
+    justify-content: space-between;
+    width: 960px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .projects__link-to-main-page {
+    margin-bottom: 78px;
+  }
+
+}

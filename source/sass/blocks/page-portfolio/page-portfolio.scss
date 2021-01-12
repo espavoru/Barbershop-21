@@ -7,3 +7,9 @@
     margin-left: 11px;
   }
 }
+
+@media (min-width: 1080px) {
+  .page-portfolio .page-header {
+    min-height: 380px;
+  }
+}
