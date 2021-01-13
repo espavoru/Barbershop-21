@@ -11,3 +11,4 @@ loadScript("sass/blocks/main-nav/main-nav.js");
 loadScript("sass/blocks/slider/slider.js");
 loadScript("sass/blocks/news/news.js");
 loadScript("sass/blocks/project/project.js");
+loadScript("sass/blocks/modal-form/modal-form.js");
