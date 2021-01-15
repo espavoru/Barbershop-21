@@ -13,7 +13,7 @@
 
 .pricelist__title {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
 
   font-size: 30px;
   line-height: 1;
@@ -32,6 +32,10 @@
   font-size: 20px;
   line-height: 27px;
   color: #ffffff;
+}
+
+.pricelist__num {
+  display: none;
 }
 
 .pricelist__service {
@@ -81,6 +85,7 @@
   }
 
   td.pricelist__num {
+    display: table-cell;
     width: 11%;
     padding: 0;
 
@@ -156,6 +161,10 @@
     padding-left: 18px;
   }
 
+  .pricelist__service {
+    width: 40%;
+  }
+
   .pricelist__promo.promo {
     flex-basis: calc(100% / 6 * 2 - 50px);
     overflow: hidden;
@@ -179,5 +188,4 @@
     text-align: center;
     white-space: normal;
   }
-
 }

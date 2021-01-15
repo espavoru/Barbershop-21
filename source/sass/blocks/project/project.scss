@@ -44,7 +44,7 @@
 .project__info {
   margin: 0;
   padding: 20px;
-  padding-top: 19px;
+  padding-top: 22px;
   padding-left: 22px;
   padding-bottom: 0;
 
@@ -76,8 +76,13 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 13px;
   padding: 0;
   list-style: none;
+}
+
+.project--featured .project__list {
+  margin-bottom: 0;
 }
 
 .project__list-item {
@@ -189,12 +194,16 @@
   .project__info {
     display: flex;
     flex-direction: column;
-    padding-top: 42px;
+    padding-top: 39px;
     padding-right: 50px;
     padding-bottom: 20px;
     padding-left: 0;
 
     border: none;
+  }
+
+  .project--featured .project__info {
+    padding-top: 42px;
   }
 
   .project__title {
@@ -207,6 +216,14 @@
 
   .project__list {
     margin-top: auto;
+  }
+
+  .project__list-item {
+    margin-bottom: 11px;
+  }
+
+  .project--featured .project__list-item {
+    margin-bottom: 19px;
   }
 }
 
@@ -266,7 +283,15 @@
     padding-bottom: 33px;
   }
 
+  .project__list {
+    margin-bottom: 0;
+  }
+
   .project__list-item {
+    margin-bottom: 0;
+  }
+
+  .project--featured .project__list-item {
     margin-bottom: 0;
   }
 

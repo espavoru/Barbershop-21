@@ -26,10 +26,11 @@ const projectGallery = (options) => {
 
   const toggleImgs = () => {
     window.addEventListener("resize", () => {
+      const imgs = document.querySelectorAll(".project__image--lg");
       viewport = document.body.clientWidth;
 
       if (viewport >= 1080) {
-        createImg();
+        if (!imgs) createImg();
       } else {
         deleteImg();
       }
