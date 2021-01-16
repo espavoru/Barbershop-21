@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Наши работы</title>
-  <script src="js/app.js"></script>
+  <title>HTML Academy: Barbershop</title>
+  <script defer src="js/app.js"></script>
 </head>
 
-<body>
+<body class="page-order">
 
   <header class="page-header">
     <a href="#" class="page-header__logo-link">
@@ -21,10 +21,11 @@
       <button class="main-nav__toggle">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="portfolio.html">Наши работы</a></li>
-          <li class="site-list__item site-list__item--active"><a href="order.html">Записаться</a></li>
-          <li class="site-list__item"><a href="contacts.html">Контакты</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="portfolio.html">Наши работы</a></li>
+          <li class="site-list__item site-list__item--active"><a class="site-list__link"
+              href="order.html">Записаться</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item"><a href="" class="user-list__login">Войти</a></li>
@@ -34,8 +35,28 @@
   </header>
   <!-- /.page-header -->
 
-  <main class="page-portfolio"></main>
-  <!-- /.page-main -->
+  <main class="order-main">
+    <div class="order-main__wrapper">
+      <h1 class="order-main__title">Запись на стрижку</h1>
+      <form class="order form" action="#" method="POST">
+        <fieldset class="form__fieldset order__client-info">
+          <label for="surname-field" class="field-text">
+            <input id="surname-field" placeholder="Фамилия" name="surname" type="text" class="field-text__input"
+              required>
+          </label>
+          <label for="name-field" class="field-text">
+            <input id="name-field" name="name" placeholder="Имя" type="text" class="field-text__input" required>
+          </label>
+          <label for="patronymic-field" class="field-text">
+            <input id="patronymic-field" name="patronymic" placeholder="Отчество" type="text" class="field-text__input">
+          </label>
+        </fieldset>
+      </form>
+      <!-- /.order -->
+    </div>
+    <!-- /.order-main__wrapper -->
+  </main>
+  <!-- /.order-main -->
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
@@ -43,7 +64,7 @@
         <b class="contacts__title">Барбершоп "Бородинский"</b>
         <p class="contacts__text">
           г.Киев, ул. Майдан Незалежности 3 <br>
-          <a class="contacts__phone" href="tel:+380448520113">
+          <a class="contacts__phone button" href="tel:+380448520113">
             <span class="contacts__phone-mobile">Тел.:</span>
             +38 (044) 852-01-13
           </a>
@@ -55,12 +76,9 @@
       <div class="page-footer__social social">
         <b class="social__title">Давайте дружить!</b>
         <ul class="social__list">
-          <li class="social__item"><a href="#" class="social__link social__link--vkudahte">Мы вкудахте</a>
-          </li>
-          <li class="social__item"><a href="#" class="social__link social__link--facebook">Мы в Facebook</a>
-          </li>
-          <li class="social__item"><a href="#" class="social__link social__link--instagram">Мы в Instagram</a>
-          </li>
+          <li class="social__item"><a href="#" class="social__link social__link--vkudahte">Мы вкудахте</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--facebook">Мы в Facebook</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--instagram">Мы в Instagram</a></li>
         </ul>
         <!-- /.social__list -->
       </div>
