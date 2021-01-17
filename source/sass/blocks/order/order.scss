@@ -1,0 +1,73 @@
+.order {
+  padding-bottom: 70px;
+
+  &__service-info {
+    margin-bottom: 29px;
+  }
+
+  &__service-info [name="service-info"] {
+    min-height: 112px;
+    padding-top: 8px;
+
+    text-align: left;
+  }
+
+  &__service-type {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  &__service-type .form__heading {
+    flex-basis: 100%;
+  }
+
+  &__extra {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__extra .field-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__extra .field-checkbox::before {
+    content: "";
+
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-right: 23px;
+
+    border: 1px solid $border-color-light;
+  }
+
+  &__extra [type="checkbox"] {
+    display: none;
+  }
+
+  & [type="checkbox"]:checked + .field-checkbox::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    width: 34px;
+    height: 34px;
+
+    background-image: url("../../../img/icon-input-checked.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__submit {
+    width: 100%;
+    color: #ffffff;
+    background-color: $bg-color-accent;
+  }
+}
