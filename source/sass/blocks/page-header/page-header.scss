@@ -15,7 +15,7 @@
 
 @media (min-width: 768px) {
   .page-header {
-    min-height: 470px;
+    min-height: 285px;
 
     background-image: url("../../../img/back-desktop.jpg");
     background-position: center bottom;
@@ -23,13 +23,23 @@
     background-size: cover;
   }
 
+  .page-main .page-header {
+    min-height: 470px;
+  }
+
   .page-header__logo-link {
     order: 1;
     width: 370px;
     height: 101px;
+    margin-top: 40px;
+    margin-left: 11px;
 
     background-image: url("../../../img/logotype-tablet.svg.png");
     background-repeat: no-repeat;
+  }
+
+  .page-main .page-header__logo-link {
+    margin-left: 0;
   }
 
   .page-header__logo-image {

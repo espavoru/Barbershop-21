@@ -17,4 +17,13 @@
     text-align: center;
     text-transform: uppercase;
   }
+
+  @media (min-width: 768px) {
+    &__heading {
+      flex-basis: 100%;
+
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
 }

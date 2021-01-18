@@ -119,6 +119,17 @@
     mainNav.classList.toggle("main-nav--opened");
   };
 
+  const createModalFormOverlay = () => {
+    const overlayElement = document.createElement("div");
+    overlayElement.classList.add("modal-form-overlay");
+    return overlayElement;
+  };
+
+  const removeModalFormOverlay = () => {
+    const overlay = document.querySelector(".modal-form-overlay");
+    if (overlay) overlay.remove();
+  };
+
   const clickHandler = (e) => {
     const loginFormOptions = {
       cls: "login-form",
@@ -127,23 +138,44 @@
     };
 
     const loginForm = new createModal(loginFormOptions);
+    const formEl = document.querySelector(`.${loginFormOptions.cls}`);
 
     if (e.target.closest(".user-list__login")) {
       e.preventDefault();
       hideMobileMenu();
-      document.body.prepend(loginForm.getElem());
+
+      if (!formEl) {
+        document.body.prepend(loginForm.getElem());
+        document.body.prepend(createModalFormOverlay());
+      }
     }
 
     if (e.target.closest(".modal-form__btn-close")) {
       loginForm.removeElem();
+      removeModalFormOverlay();
+    }
+
+    if (e.target.closest(".modal-form-overlay")) {
+      loginForm.removeElem();
+      removeModalFormOverlay();
     }
 
     if (e.target.closest(".modal-form__btn-login")) {
       alert("Form sent");
       e.preventDefault();
       loginForm.removeElem();
+      removeModalFormOverlay();
+    }
+  };
+
+  const keyupHandler = (e) => {
+    const form = document.querySelector(".modal-form");
+    if (form && e.keyCode == 27) {
+      form.remove();
+      removeModalFormOverlay();
     }
   };
 
   document.body.addEventListener("click", clickHandler);
+  document.body.addEventListener("keyup", keyupHandler);
 })();
