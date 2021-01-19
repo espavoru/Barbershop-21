@@ -1,4 +1,38 @@
 .field-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &__input {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-right: 23px;
+
+    border: 1px solid $border-color-light;
+    background-color: #ffffff;
+  }
+
+  &__input:checked + .field-checkbox::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    width: 34px;
+    height: 34px;
+
+    background-image: url("../../../img/icon-input-checked.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   @media (min-width: 768px) {
     font-size: 24px;
     line-height: 30px;

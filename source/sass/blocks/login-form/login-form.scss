@@ -1,8 +1,10 @@
 .login-form {
-  @media (min-width: 768px) {
-    left: 50%;
-    width: 460px;
+  left: 50%;
+  max-width: 460px;
 
-    transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  @media (min-width: 768px) {
+    width: 460px;
   }
 }

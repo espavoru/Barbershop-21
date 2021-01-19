@@ -29,6 +29,10 @@
       elem.classList.add(blockClass);
       if (options.cls) elem.classList.add(options.cls);
 
+      const closeBtn = document.createElement("i");
+      closeBtn.classList.add(`${blockClass}__icon-close`);
+      elem.appendChild(closeBtn);
+
       if (options.title) {
         const title = document.createElement("h2");
         title.classList.add(`${blockClass}__title`);
@@ -78,14 +82,16 @@
       const labelStayIn = document.createElement("label");
       labelStayIn.htmlFor = "stayIn";
       labelStayIn.classList.add(`${blockClass}__stay-in`);
+      labelStayIn.classList.add("field-checkbox");
       labelStayIn.textContent = "Запомните меня";
 
       const inputStayIn = document.createElement("input");
+      inputStayIn.classList.add("field-checkbox__input");
       inputStayIn.id = "stayIn";
       inputStayIn.type = "checkbox";
       inputStayIn.name = "stayIn";
 
-      labelStayIn.prepend(inputStayIn);
+      elem.append(inputStayIn);
       elem.append(labelStayIn);
 
       const rememberPassword = document.createElement("a");
@@ -100,8 +106,6 @@
       const btnLogIn = document.createElement("button");
       btnLogIn.classList.add(`${blockClass}__btn-login`);
       btnLogIn.classList.add(`button`);
-      // btnLogIn.type = "submit";
-      btnLogIn.textContent = "Войти";
 
       const btnClose = document.createElement("button");
       btnClose.classList.add(`${blockClass}__btn-close`);
@@ -151,6 +155,11 @@
     }
 
     if (e.target.closest(".modal-form__btn-close")) {
+      loginForm.removeElem();
+      removeModalFormOverlay();
+    }
+
+    if (e.target.closest(".modal-form__icon-close")) {
       loginForm.removeElem();
       removeModalFormOverlay();
     }

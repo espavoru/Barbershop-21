@@ -12,6 +12,10 @@
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.75);
 }
 
+.modal-form__icon-close {
+  display: none;
+}
+
 .modal-form__title {
   margin: 0;
   margin-bottom: 20px;
@@ -70,23 +74,33 @@
   background-image: url("../../../img/icon-password.png");
 }
 
-.modal-form__stay-in input {
-  margin-right: 15px;
+.modal-form__stay-in.field-checkbox {
+  float: left;
+  margin-top: 25px;
+
+  font-size: 18px;
+  line-height: 30px;
+
+  &::before {
+    margin-right: 15px;
+  }
 }
 
 .modal-form__remember-password {
-  display: inline-block;
-  margin-left: 60px;
+  float: right;
+  margin-top: 34px;
   margin-bottom: 35px;
 }
 
 .modal-form__btns-wrapper {
   display: flex;
   justify-content: space-between;
+  clear: both;
 }
 
-.modal-form__btns-wrapper button {
-  width: 130px;
+.modal-form__btn-login,
+.modal-form__btn-close {
+  flex-basis: calc(100% / 2 - 10px);
 
   text-align: center;
 }
@@ -96,6 +110,10 @@
 
   border-color: $bg-color-accent;
   background-color: $bg-color-accent;
+
+  &::before {
+    content: "Войти";
+  }
 }
 
 .modal-form-overlay {
@@ -112,6 +130,20 @@
     padding-right: 70px;
     padding-bottom: 50px;
 
+    &__icon-close {
+      position: absolute;
+      top: 60px;
+      right: -75px;
+      display: block;
+      width: 27px;
+      height: 27px;
+
+      background-image: url("../../../img/icon-form-close-x-00.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+
     &__title {
       font-size: 40px;
       line-height: 30px;
@@ -126,6 +158,18 @@
 
     &__field::placeholder {
       color: #000000;
+    }
+
+    &__btn-login {
+      flex-basis: 100%;
+
+      &::before {
+        content: "Войти в личный кабинет";
+      }
+    }
+
+    &__btn-close {
+      display: none;
     }
   }
 }
