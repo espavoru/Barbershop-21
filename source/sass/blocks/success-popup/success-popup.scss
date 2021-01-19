@@ -1,0 +1,12 @@
+.success-popup {
+  & .modal-form__btn-close {
+    flex-basis: 100%;
+
+    color: #ffffff;
+    background-color: $bg-color-accent;
+
+    &::before {
+      content: "Закрыть окно";
+    }
+  }
+}
