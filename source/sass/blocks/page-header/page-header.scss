@@ -49,12 +49,17 @@
 
 @media (min-width: 1080px) {
   .page-header {
+    min-height: 377px;
+  }
+
+  .page-main .page-header {
     min-height: 720px;
   }
 
   .page-header__logo-link {
     height: 153px;
     margin-top: 59px;
+    margin-left: 0;
 
     background-image: url("../../../img/logotype-desktop.png");
   }

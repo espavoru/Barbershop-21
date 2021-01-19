@@ -46,6 +46,7 @@
     margin-right: 23px;
 
     border: 1px solid $border-color-light;
+    background-color: #ffffff;
   }
 
   &__extra [type="checkbox"] {
@@ -135,6 +136,49 @@
 
       font-size: 24px;
       line-height: 30px;
+    }
+  }
+
+  @media (min-width: 1080px) {
+    padding-top: 50px;
+    padding-bottom: 87px;
+
+    &__client-info {
+      justify-content: space-between;
+    }
+
+    &__client-info .field-text {
+      flex-basis: calc(100% / 3 - 25px);
+    }
+
+    &__contacts {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+
+    &__contacts .field-text {
+      flex-basis: calc(100% / 2 - 17px);
+    }
+
+    &__service-info {
+      margin-bottom: 59px;
+    }
+
+    &__service-type {
+      margin-bottom: 33px;
+    }
+
+    &__service-type .form__heading {
+      margin-bottom: 49px;
+    }
+
+    &__extra {
+      margin-bottom: 32px;
+    }
+
+    &__extra > .field-checkbox {
+      flex-basis: calc(100% / 3);
     }
   }
 }

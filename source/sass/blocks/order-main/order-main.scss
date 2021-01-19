@@ -45,4 +45,12 @@
       width: 160px;
     }
   }
+
+  @media (min-width: 1080px) {
+    .order-main {
+      &__wrapper {
+        width: 960px;
+      }
+    }
+  }
 }
