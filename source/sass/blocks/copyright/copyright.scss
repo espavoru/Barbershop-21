@@ -11,7 +11,8 @@
   margin: 0 auto;
 
   color: #ffffff;
-  border-color: $border-color-dark;
 
   background-color: $bg-color-dark;
+
+  @include buttonBlackActions;
 }

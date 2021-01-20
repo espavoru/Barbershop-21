@@ -18,6 +18,10 @@
   margin: 0;
 }
 
+.contacts__phone {
+  @include buttonBlackActions;
+}
+
 .contacts__phone-mobile {
   display: none;
 }

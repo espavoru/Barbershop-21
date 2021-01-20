@@ -20,6 +20,14 @@
     background-color: #ffffff;
   }
 
+  &:hover::before {
+    border: solid 1px #d5c9bd;
+  }
+
+  &:active::before {
+    background-color: #d5c9bd;
+  }
+
   &__input:checked + .field-checkbox::after {
     content: "";
 

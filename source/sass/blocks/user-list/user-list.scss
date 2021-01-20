@@ -31,6 +31,11 @@
     background-position: center;
 
     transform: translateY(2px);
+    transition: all 500ms;
+  }
+
+  &:hover::before {
+    transform: scale(1.3);
   }
 }
 

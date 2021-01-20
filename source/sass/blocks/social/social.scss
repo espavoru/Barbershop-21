@@ -16,9 +16,7 @@
 
   background-color: $bg-color-dark;
 
-  &:hover {
-    filter: brightness(0.96);
-  }
+  @include buttonBlackActions;
 }
 
 .social__link {
@@ -28,6 +26,10 @@
 
   background-repeat: no-repeat;
   background-position: center;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--vkudahte {

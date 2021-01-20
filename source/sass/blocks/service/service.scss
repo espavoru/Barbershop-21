@@ -15,6 +15,18 @@
     font-size: 18px;
     line-height: 24px;
     text-align: center;
+
+    &:hover::before {
+      border: solid 1px #d5c9bd;
+    }
+
+    &:active::before {
+      background-color: #d5c9bd;
+    }
+
+    &:active::after {
+      background-color: #ffffff;
+    }
   }
 
   &__field::before {

@@ -1,5 +1,7 @@
 .success-popup {
   & .modal-form__btn-close {
+    @include buttonDarkActions;
+
     flex-basis: 100%;
 
     color: #ffffff;

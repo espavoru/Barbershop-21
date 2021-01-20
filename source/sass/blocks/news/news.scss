@@ -32,9 +32,22 @@
 }
 
 .news__item {
+  --news-color: #000000;
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
+
+  color: var(--news-color);
+
+  &:hover {
+    --news-color: #826550;
+    color: var(--news-color);
+    text-decoration: underline;
+  }
+
+  &:active {
+    --news-color: #6a4d38;
+  }
 
   &:last-of-type {
     margin-bottom: 0;
@@ -57,7 +70,7 @@
   text-align: center;
   color: #ffffff;
 
-  background-color: #000000;
+  background-color: var(--news-color);
 
   &::after {
     content: "";
@@ -66,7 +79,11 @@
     display: block;
     border: 25px solid transparent;
     border-bottom: none;
-    border-top: 10px solid #000000;
+    border-top: 10px solid var(--news-color);
+  }
+
+  .news__item:hover & {
+    background-color: var(--news-color);
   }
 }
 

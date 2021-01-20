@@ -109,6 +109,8 @@
 }
 
 .modal-form__btn-login {
+  @include buttonDarkActions;
+
   color: #ffffff;
 
   border-color: $bg-color-accent;

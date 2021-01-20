@@ -34,6 +34,8 @@
     width: 100%;
     color: #ffffff;
     background-color: $bg-color-accent;
+
+    @include buttonDarkActions;
   }
 
   @media (min-width: 768px) {

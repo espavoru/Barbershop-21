@@ -38,11 +38,8 @@
 
 .main-nav__wrapper {
   flex-grow: 1;
-  min-height: 70vh;
   z-index: 10;
 
-  background-color: #6a4d38;
-  box-shadow: inset 5px 0 5px rgba(0, 0, 0, 0.1);
   transition: all 500ms ease-in;
 }
 
@@ -61,6 +58,20 @@
   display: block;
   text-align: left;
 }
+/* prettier-ignore */
+.main-nav--opened .site-list__link {
+  box-shadow: inset 5px 0 5px 0 rgba($color: #000000, $alpha: 0.2),
+    0 1px 0 0 #71543f,
+    inset 0 1px 0 0 #886e5b;
+}
+
+.main-nav__list.user-list {
+  background-color: #6a4d38;
+}
+
+.main-nav--opened .user-list__login {
+  box-shadow: inset 5px 0 5px 0 rgba($color: #000000, $alpha: 0.2);
+}
 
 @media (min-width: 768px) {
   .main-nav {
@@ -76,6 +87,7 @@
 
   .main-nav__wrapper {
     display: flex;
+    flex-grow: 0;
     width: 768px;
     margin: 0 auto;
     padding: 0 64px;
@@ -98,11 +110,10 @@
 
   .main-nav__list .user-list__login {
     height: auto;
-    padding: 17px 15px;
-    margin-top: 10px;
-    margin-left: 20px;
+    padding: 24px 21px;
 
     font-size: 0;
+    transition: all 500ms;
   }
 
   .main-nav__list .site-list__item {
@@ -112,13 +123,22 @@
 
   .main-nav .site-list__link {
     height: auto;
-    padding: 25px 16px;
+    padding: 24px 16px;
     margin: 0;
 
     letter-spacing: 0.1px;
 
     box-shadow: none;
     background-color: transparent;
+    transition: all 500ms;
+
+    &:hover {
+      color: $bg-color-accent;
+    }
+
+    &:active {
+      color: rgba($color: #ffffff, $alpha: 0.3);
+    }
   }
 
   .main-nav .site-list__item--active::after {
@@ -148,6 +168,16 @@
   .main-nav .site-list__link {
     padding-left: 32px;
     padding-right: 30px;
+
+    &:hover {
+      color: #000000;
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: rgba($color: #000000, $alpha: 0.3);
+      background-color: #ffffff;
+    }
   }
 
   .main-nav .site-list__item--active::after {
@@ -155,11 +185,31 @@
   }
 
   .main-nav__list .user-list__login {
-    margin-top: 7px;
-    margin-left: 42px;
+    max-width: 130px;
+    margin-left: auto;
 
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
+
+    &:hover {
+      color: #000000;
+      background-color: #ffffff;
+
+      &::before {
+        background-image: url("../../../img/icon-login-hover.png");
+        opacity: 0.3;
+      }
+    }
+
+    &:active {
+      color: rgba($color: #000000, $alpha: 0.3);
+      background-color: #ffffff;
+
+      &::before {
+        background-image: url("../../../img/icon-login-hover.png");
+        opacity: 0.1;
+      }
+    }
   }
 }
