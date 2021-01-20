@@ -1,0 +1,258 @@
+.reviews {
+  padding-top: 26px;
+  padding-bottom: 35px;
+  overflow-x: hidden;
+  background-color: $bg-color-light;
+  letter-spacing: 0.1px;
+}
+
+.reviews__wrapper {
+  padding: 0 20px;
+}
+
+.reviews__title {
+  margin: 0;
+
+  font-size: 30px;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.reviews__write {
+  display: none;
+}
+
+.reviews__list {
+  width: 100%;
+  min-height: 196px;
+}
+
+.reviews__item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 10px;
+}
+
+.reviews__prev,
+.reviews__next {
+  display: none;
+}
+
+.reviews__author-picture {
+  float: left;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.reviews__author-image {
+  border: 1px solid $border-color-light;
+}
+
+.reviews__author-name {
+  display: block;
+  margin: 0;
+  margin-bottom: 9px;
+  margin-left: 70px;
+
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-left: 70px;
+
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.reviews__toggles .slider__toggle {
+  border-color: #000000;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    padding-top: 35px;
+    padding-bottom: 51px;
+  }
+
+  .reviews__wrapper.slider {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 768px;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin: 0 auto;
+  }
+
+  .reviews__title {
+    padding-top: 10px;
+    font-size: 40px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .reviews__write {
+    display: flex;
+    width: 160px;
+    margin-bottom: 39px;
+  }
+
+  .reviews__list {
+    min-height: 160px;
+    border: 1px solid $border-color-light;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    position: relative;
+    display: block;
+    flex-shrink: 0;
+    width: 50px;
+
+    font-size: 0;
+    border: none;
+    border-left: 1px solid $border-color-light;
+
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      border: 12px solid transparent;
+      border-left-color: #000000;
+      border-top-width: 6px;
+      border-bottom-width: 6px;
+      border-right: 0;
+    }
+  }
+
+  .reviews__prev {
+    order: -1;
+
+    transform: rotate(180deg);
+  }
+
+  .reviews__next {
+    order: 1;
+  }
+
+  .reviews__author-image {
+    width: 80px;
+    margin-left: 30px;
+
+    border-radius: 50%;
+  }
+
+  .reviews__text,
+  .reviews__author-name {
+    margin-left: 138px;
+  }
+
+  .reviews__author-name {
+    margin-bottom: 12px;
+  }
+
+  .reviews__toggles {
+    width: 135px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+
+    background-color: $bg-color-light;
+  }
+}
+
+@media (min-width: 1080px) {
+  .reviews {
+    padding-top: 40px;
+    padding-bottom: 31px;
+  }
+
+  .reviews__wrapper.slider {
+    width: 960px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reviews__title {
+    padding-left: 70px;
+  }
+
+  .reviews__write {
+    margin-bottom: 35px;
+  }
+
+  .reviews__item {
+    padding: 0;
+  }
+
+  .reviews__author-picture {
+    margin-top: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 249px;
+      height: 160px;
+      margin-left: 20px;
+
+      border-radius: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: scale(1.01);
+    }
+  }
+
+  .reviews__item:nth-of-type(1) .reviews__author-picture::before {
+    background-image: url("../../../img/picture-travis-lg.jpg");
+  }
+
+  .reviews__item:nth-of-type(2) .reviews__author-picture::before {
+    background-image: url("../../../img/picture-john-lg.jpg");
+  }
+
+  .reviews__item:nth-of-type(3) .reviews__author-picture::before {
+    background-image: url("../../../img/picture-joe-lg.jpg");
+  }
+
+  .reviews__author-image {
+    display: none;
+  }
+
+  .reviews__text,
+  .reviews__author-name {
+    margin-left: 338px;
+    padding-right: 30px;
+  }
+
+  .reviews__author-name {
+    padding-top: 30px;
+  }
+
+  .reviews__toggles {
+    margin-top: 41px;
+  }
+}

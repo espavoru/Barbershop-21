@@ -1,0 +1,22 @@
+.promo {
+  margin: 0;
+  padding: 10px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+
+  border: 1px solid $border-color-dark;
+
+  background-image: url("../../../img/clock illustration.png");
+  background-repeat: no-repeat;
+  background-position: 21px center;
+}
+
+.promo__text {
+  display: block;
+  margin-left: 103px;
+
+  font-size: 20px;
+  line-height: 27px;
+  white-space: pre-line;
+  color: #ffffff;
+}

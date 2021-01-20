@@ -1,0 +1,66 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header__logo-link {
+  margin-top: 28px;
+  margin-bottom: 25px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    min-height: 285px;
+
+    background-image: url("../../../img/back-desktop.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page-main .page-header {
+    min-height: 470px;
+  }
+
+  .page-header__logo-link {
+    order: 1;
+    width: 370px;
+    height: 101px;
+    margin-top: 40px;
+    margin-left: 11px;
+
+    background-image: url("../../../img/logotype-tablet.svg.png");
+    background-repeat: no-repeat;
+  }
+
+  .page-main .page-header__logo-link {
+    margin-left: 0;
+  }
+
+  .page-header__logo-image {
+    display: none;
+  }
+}
+
+@media (min-width: 1080px) {
+  .page-header {
+    min-height: 377px;
+  }
+
+  .page-main .page-header {
+    min-height: 720px;
+  }
+
+  .page-header__logo-link {
+    height: 153px;
+    margin-top: 59px;
+    margin-left: 0;
+
+    background-image: url("../../../img/logotype-desktop.png");
+  }
+}

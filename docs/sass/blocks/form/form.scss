@@ -1,0 +1,29 @@
+.form {
+  &__fieldset {
+    margin: 0;
+    margin-bottom: 26px;
+    padding: 0;
+
+    border: none;
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 35px;
+
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 768px) {
+    &__heading {
+      flex-basis: 100%;
+
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+}

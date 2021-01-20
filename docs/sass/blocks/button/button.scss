@@ -1,0 +1,30 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+
+  border: 1px solid $border-color-light;
+  background-color: $bg-color-light;
+
+  transition: all 100ms ease-in;
+  cursor: pointer;
+
+  &:active {
+    color: rgba($color: #000000, $alpha: 0.3);
+    border: solid 1px #d5c9bd;
+    background-color: #d5c9bd;
+    transform: scale(0.98);
+  }
+
+  &:hover {
+    border: solid 1px #d5c9bd;
+  }
+}

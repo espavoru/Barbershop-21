@@ -1,0 +1,191 @@
+.pricelist {
+  padding-top: 36px;
+  padding-bottom: 52px;
+
+  background-color: #353535;
+}
+
+.pricelist__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pricelist__title {
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+
+.pricelist__table {
+  width: 100%;
+  margin-bottom: 14px;
+  border-collapse: collapse;
+
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.pricelist__num {
+  display: none;
+}
+
+.pricelist__service {
+  width: 73%;
+  padding-bottom: 14px;
+}
+
+.pricelist__add-services {
+  display: none;
+}
+
+.pricelist__price {
+  text-align: right;
+  vertical-align: top;
+}
+
+@media (min-width: 768px) {
+  .pricelist {
+    padding-top: 49px;
+    padding-bottom: 59px;
+  }
+
+  .pricelist__wrapper {
+    width: 768px;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin: 0 auto;
+  }
+
+  .pricelist__title {
+    margin-bottom: 52px;
+
+    font-size: 40px;
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: 0.1px;
+  }
+
+  .pricelist__table {
+    margin-bottom: 11px;
+  }
+
+  .pricelist__table td {
+    border: 1px solid #4a4a4a;
+    padding-left: 20px;
+    padding-right: 18px;
+  }
+
+  td.pricelist__num {
+    display: table-cell;
+    width: 11%;
+    padding: 0;
+
+    text-align: center;
+  }
+
+  .pricelist__service {
+    width: 39%;
+    padding-top: 13px;
+  }
+
+  .pricelist__add-services-sm {
+    display: none;
+  }
+
+  .pricelist__add-services {
+    display: table-cell;
+    width: 25%;
+  }
+
+  .pricelist__price {
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .pricelist__promo.promo {
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    background-image: url("../../../img/clock-illustration-md.png");
+  }
+
+  .pricelist__promo .promo__text {
+    width: 75%;
+    margin-left: auto;
+    padding-left: 20px;
+
+    font-size: 30px;
+    line-height: 37px;
+    text-align: left;
+    white-space: nowrap;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 1080px) {
+  .pricelist {
+    padding-top: 83px;
+    padding-bottom: 83px;
+  }
+
+  .pricelist__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 960px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pricelist__title {
+    flex-basis: 100%;
+  }
+
+  .pricelist__table {
+    flex-basis: calc(100% / 6 * 4 - 10px);
+    margin: 0;
+  }
+
+  td.pricelist__add-services {
+    padding-left: 18px;
+  }
+
+  .pricelist__service {
+    width: 40%;
+  }
+
+  .pricelist__promo.promo {
+    flex-basis: calc(100% / 6 * 2 - 50px);
+    overflow: hidden;
+    padding-top: 201px;
+    padding-bottom: 10px;
+
+    background-image: url("../../../img/clock-illustration-lg.png");
+    background-position: center 36px;
+  }
+
+  .pricelist__promo .promo__text {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: normal;
+    text-transform: none;
+    text-align: center;
+    white-space: normal;
+  }
+}

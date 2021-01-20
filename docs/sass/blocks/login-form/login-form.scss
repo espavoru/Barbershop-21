@@ -1,0 +1,13 @@
+.login-form {
+  & .modal-form__btn-close::before {
+    content: "Закрыть";
+  }
+
+  @media (min-width: 768px) {
+    width: 460px;
+
+    & .modal-form__btn-close {
+      display: none;
+    }
+  }
+}

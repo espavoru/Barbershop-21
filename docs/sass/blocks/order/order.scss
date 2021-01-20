@@ -1,0 +1,150 @@
+.order {
+  padding-bottom: 70px;
+
+  &__service-info {
+    margin-bottom: 29px;
+  }
+
+  &__service-info [name="service-info"] {
+    min-height: 112px;
+    padding-top: 8px;
+
+    text-align: left;
+  }
+
+  &__service-type {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  &__service-type .form__heading {
+    flex-basis: 100%;
+  }
+
+  &__extra {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__submit {
+    width: 100%;
+    color: #ffffff;
+    background-color: $bg-color-accent;
+
+    @include buttonDarkActions;
+  }
+
+  @media (min-width: 768px) {
+    clear: both;
+    padding-top: 45px;
+    padding-bottom: 76px;
+
+    &__client-info {
+      display: flex;
+      margin-bottom: 30px;
+    }
+
+    &__client-info .field-text {
+      flex-basis: calc(100% / 3);
+    }
+
+    &__client-info [for="name-field"] {
+      order: -1;
+    }
+
+    &__contacts {
+      margin-bottom: 28px;
+    }
+
+    &__contacts [for="phone-field"] {
+      margin-bottom: 35px;
+    }
+
+    &__service-info {
+      margin-bottom: 45px;
+    }
+
+    &__service-info [name="service-info"] {
+      min-height: 211px;
+      padding-top: 19px;
+    }
+
+    &__service-type {
+      margin-bottom: 30px;
+    }
+
+    &__service-type .form__heading {
+      margin-bottom: 45px;
+    }
+
+    &__extra {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 13px;
+    }
+
+    &__extra .form__heading {
+      margin-bottom: 70px;
+    }
+
+    &__extra > .field-checkbox {
+      flex-basis: calc(100% / 2);
+      margin-bottom: 47px;
+    }
+
+    &__submit {
+      height: 70px;
+
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  @media (min-width: 1080px) {
+    padding-top: 50px;
+    padding-bottom: 87px;
+
+    &__client-info {
+      justify-content: space-between;
+    }
+
+    &__client-info .field-text {
+      flex-basis: calc(100% / 3 - 25px);
+    }
+
+    &__contacts {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+
+    &__contacts .field-text {
+      flex-basis: calc(100% / 2 - 17px);
+    }
+
+    &__service-info {
+      margin-bottom: 59px;
+    }
+
+    &__service-type {
+      margin-bottom: 33px;
+    }
+
+    &__service-type .form__heading {
+      margin-bottom: 49px;
+    }
+
+    &__extra {
+      margin-bottom: 32px;
+    }
+
+    &__extra > .field-checkbox {
+      flex-basis: calc(100% / 3);
+    }
+  }
+}

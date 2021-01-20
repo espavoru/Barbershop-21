@@ -1,0 +1,33 @@
+$bg-color-light: #f8f5f2;
+$bg-color-dark: #292929;
+$border-color-light: #e5ddd5;
+$border-color-dark: #3f3f3f;
+$bg-color-accent: #826550;
+
+@mixin buttonDarkActions {
+  &:hover {
+    background-color: #6a4d38;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+    background-color: #6a4d38;
+  }
+
+  &:disabled {
+    background-color: #aeaeae;
+  }
+}
+
+@mixin buttonBlackActions {
+  border: solid 1px #3f3f3f;
+
+  &:hover {
+    border: solid 1px #545454;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+    background-color: #252525;
+  }
+}
