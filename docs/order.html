@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Barbershop</title>
+  <script defer src="js/app.js"></script>
+</head>
+
+<body class="page-order">
+
+  <header class="page-header">
+    <a href="#" class="page-header__logo-link">
+      <img src="img/logotype-mobile-svg.png" alt="Barbershop" class="page-header__logo-image" width="226" height="30"
+        srcset="img/logotype-mobile-svg@2x.png 2x, img/logotype-mobile-svg@3x.png 3x">
+    </a>
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="portfolio.html">Наши работы</a></li>
+          <li class="site-list__item site-list__item--active"><a class="site-list__link" href="#">Записаться</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item"><a href="" class="user-list__login">Войти</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- /.page-header -->
+
+  <main class="order-main">
+    <div class="order-main__wrapper">
+      <h1 class="order-main__title">Запись на стрижку</h1>
+      <a href="index.html" class="order-main__button-home button">На главную</a>
+
+      <form class="order form" action="#" method="POST">
+        <fieldset class="form__fieldset order__client-info">
+          <label for="surname-field" class="field-text">
+            <input id="surname-field" placeholder="Фамилия" name="surname" type="text" class="field-text__input"
+              required>
+          </label>
+          <label for="name-field" class="field-text">
+            <input id="name-field" name="name" placeholder="Имя" type="text" class="field-text__input" required>
+          </label>
+          <label for="patronymic-field" class="field-text">
+            <input id="patronymic-field" name="patronymic" placeholder="Отчество" type="text" class="field-text__input">
+          </label>
+        </fieldset>
+        <!-- /.order__client-info -->
+
+        <fieldset class="form__fieldset order__contacts">
+          <label for="phone-field" class="field-text">
+            <input id="phone-field" class="field-text__input" type="text" name="phone" placeholder="Контактный телефон"
+              required>
+          </label>
+          <label for="email-field" class="field-text">
+            <input id="email-field" class="field-text__input" type="email" name="email" placeholder="Контактный e-mail">
+          </label>
+        </fieldset>
+        <!-- /.order__contacts -->
+
+        <fieldset class="form__fieldset order__service-info">
+          <label for="service-info-area" class="field-text">
+            <textarea id="service-info-area" class="field-text__input" name="service-info"
+              placeholder="Доп. информация для мастера"></textarea>
+          </label>
+        </fieldset>
+        <!-- /.order__service-info -->
+
+        <fieldset class="form__fieldset order__service-type">
+          <h2 class="form__heading">Выберите модель бороды:</h2>
+
+          <div class="service">
+            <input id="service-type-01" class="service__radio" type="radio" name="service" value="service-type-01">
+            <label for="service-type-01" class="service__field">
+              <span class="service__name">адмирал</span>
+              <img class="service__img" src="img/img-beard-01.png" alt="Тип Адмирал" width="52" height="49">
+            </label>
+          </div>
+
+          <div class="service">
+            <input id="service-type-02" class="service__radio" type="radio" name="service" value="service-type-02">
+            <label for="service-type-02" class="service__field">
+              <span class="service__name">лесоруб</span>
+              <img class="service__img" src="img/img-beard-02.png" alt="Тип Лесоруб" width="58" height="68">
+            </label>
+          </div>
+
+          <div class="service">
+            <input id="service-type-03" class="service__radio" type="radio" name="service" value="service-type-03">
+            <label for="service-type-03" class="service__field">
+              <span class="service__name">полярник</span>
+              <img class="service__img" src="img/img-beard-03.png" alt="Тип Полярник" width="63" height="78">
+            </label>
+          </div>
+
+          <div class="service">
+            <input id="service-type-04" class="service__radio" type="radio" name="service" value="service-type-04">
+            <label for="service-type-04" class="service__field">
+              <span class="service__name">боярин</span>
+              <img class="service__img" src="img/img-beard-04.png" alt="Тип Боярин" width="57" height="97">
+            </label>
+          </div>
+
+          <div class="service">
+            <input id="service-type-05" class="service__radio" type="radio" name="service" value="service-type-05">
+            <label for="service-type-05" class="service__field">
+              <span class="service__name">мудрец</span>
+              <img class="service__img" src="img/img-beard-05.png" alt="Тип Мудрец" width="45" height="104">
+            </label>
+          </div>
+        </fieldset>
+        <!-- /.order__service-type -->
+
+        <fieldset class="form__fieldset order__extra">
+          <h2 class="form__heading">Дополнительные услуги:</h2>
+
+          <input id="extra-type-01-field" class="field-checkbox__input" type="checkbox" name="extra-type-01" checked>
+          <label for="extra-type-01-field" class="field-checkbox">
+            Подкрасить бороду
+          </label>
+
+          <input id="extra-type-02-field" class="field-checkbox__input" type="checkbox" name="extra-type-02" checked>
+          <label for="extra-type-02-field" class="field-checkbox">
+            Накрутить усы
+          </label>
+
+          <input id="extra-type-03-field" class="field-checkbox__input" type="checkbox" name="extra-type-03">
+          <label for="extra-type-03-field" class="field-checkbox">
+            Причесать бороду
+          </label>
+
+          <input id="extra-type-04-field" class="field-checkbox__input" type="checkbox" name="extra-type-04">
+          <label for="extra-type-04-field" class="field-checkbox">
+            Подровнять виски
+          </label>
+
+          <input id="extra-type-05-field" class="field-checkbox__input" type="checkbox" name="extra-type-05">
+          <label for="extra-type-05-field" class="field-checkbox">
+            Убрать седину
+          </label>
+
+          <input id="extra-type-06-field" class="field-checkbox__input" type="checkbox" name="extra-type-06">
+          <label for="extra-type-06-field" class="field-checkbox">
+            Отполировать лысину
+          </label>
+        </fieldset>
+        <!-- /.order__extra -->
+
+        <button class="order__submit button" type="submit">Отправить заявку</button>
+      </form>
+      <!-- /.order -->
+    </div>
+    <!-- /.order-main__wrapper -->
+  </main>
+  <!-- /.order-main -->
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">Барбершоп "Бородинский"</b>
+        <p class="contacts__text">
+          г.Киев, ул. Майдан Незалежности 3 <br>
+          <a class="contacts__phone button" href="tel:+380448520113">
+            <span class="contacts__phone-mobile">Тел.:</span>
+            +38 (044) 852-01-13
+          </a>
+        </p>
+        <!-- /.contacts__text -->
+      </div>
+      <!-- /.page-footer__contacts contacts -->
+
+      <div class="page-footer__social social">
+        <b class="social__title">Давайте дружить!</b>
+        <ul class="social__list">
+          <li class="social__item"><a href="#" class="social__link social__link--vkudahte">Мы вкудахте</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--facebook">Мы в Facebook</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--instagram">Мы в Instagram</a></li>
+        </ul>
+        <!-- /.social__list -->
+      </div>
+      <!-- /.page-footer__social social -->
+
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a href="#" class="copyright__link button">HTML Academy</a>
+      </div>
+      <!-- /.page-footer__copyright copyright -->
+    </div>
+    <!-- /.page-footer__wrapper -->
+  </footer>
+  <!-- /.page-footer -->
+</body>
+
+</html>
