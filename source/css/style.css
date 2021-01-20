@@ -429,7 +429,8 @@ body {
     flex-shrink: 0;
     margin-left: -16px; }
   .main-nav__list.user-list {
-    flex-basis: 16.6%; }
+    flex-basis: 16.6%;
+    background-color: transparent; }
   .main-nav__list .user-list__login {
     height: auto;
     padding: 24px 21px;

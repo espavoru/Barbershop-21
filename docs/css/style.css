@@ -493,6 +493,7 @@ body {
   }
   .main-nav__list.user-list {
     flex-basis: 16.6%;
+    background-color: transparent;
   }
   .main-nav__list .user-list__login {
     height: auto;
